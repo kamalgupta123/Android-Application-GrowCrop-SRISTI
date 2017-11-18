@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farm.sristi.ssis17.LoginActivity">
+
+
+    <Button
+        android:id="@+id/newUser"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#f7f304"
+        android:text="New User"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_above="@+id/forgotPassword"
+        android:layout_toRightOf="@+id/loginBtn"
+        android:layout_toEndOf="@+id/loginBtn"
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#f7f304"
+        android:text="Login"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_alignBaseline="@+id/newUser"
+        android:layout_alignBottom="@+id/newUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/loginPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp"
+        android:background="#c2baba"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/loginEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginPasswordField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:background="#c2baba"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp" />
+
+    <TextView
+        android:text="Forgot Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPassword"
+        tools:text="Forgot Password?"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+
+</RelativeLayout>
+

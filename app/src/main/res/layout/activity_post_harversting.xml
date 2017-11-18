@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.farm.sristi.ssis17.PostActivityHarversting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4000dp"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_btn" />
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descField"
+            android:layout_alignStart="@+id/descField"
+            android:layout_below="@+id/imageSelect"
+            android:background="@drawable/input_outline"
+            android:hint="Farmer Name"
+            android:padding="15dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/descField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/titleField"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Farmer Mobile"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:background="#15f4c8">
+
+            <TextView
+                android:id="@+id/plantHeightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="29dp"
+                android:text="Height" />
+
+            <TextView
+                android:id="@+id/plantBranchesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_below="@+id/PlantSpikesTextView"
+                android:layout_centerHorizontal="true"
+                android:text="Branches" />
+
+            <TextView
+                android:id="@+id/PlantSpikesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                android:text="Spikes"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_alignStart="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_centerVertical="true"
+                android:text="Grains Per Spike" />
+
+            <EditText
+                android:id="@+id/PlantBranchesEditText"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/plantBranchesTextView"
+                android:layout_alignStart="@+id/plantBranchesTextView"
+                android:layout_below="@+id/plantHeightTextView"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/PlantHeightEditText"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText"
+                android:layout_alignEnd="@+id/plantHeightTextView"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignRight="@+id/plantHeightTextView"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_below="@+id/plantHeightTextView"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/plantHeightTextView"
+                android:layout_alignStart="@+id/plantHeightTextView"
+                android:layout_below="@+id/lengthofspikeplant1textView"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/SpikesPerPlantEditView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PlantBranchesEditText"
+                android:layout_alignBottom="@+id/PlantBranchesEditText"
+                android:layout_alignEnd="@+id/PlantSpikesTextView"
+                android:layout_alignRight="@+id/PlantSpikesTextView"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lengthofspikeplant1textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="131dp"
+                android:text="Length Of Spikes" />
+
+            <EditText
+                android:id="@+id/PlantLengthSpikesEditText"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_alignBottom="@+id/PlantGrainsPerSpikeEditText"
+                android:layout_alignEnd="@+id/lengthofspikeplant1textView"
+                android:layout_alignRight="@+id/lengthofspikeplant1textView"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#e1a500"
+            android:text="Submit Post"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

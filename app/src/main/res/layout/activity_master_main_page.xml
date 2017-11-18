@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.farm.sristi.ssis17.MasterMainPage">
+
+    <Button
+        android:id="@+id/fieldVariety"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundbutton"
+        android:text="Crop Trail Data"
+        android:textAllCaps="false"
+        android:textColor="#e20000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/pest"
+        android:layout_alignStart="@+id/pest"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/pest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldVariety"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundbutton"
+        android:text="Pest Control"
+
+        android:textAllCaps="false"
+        android:textColor="#e20000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="200dp"
+
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#e20000"
+        android:background="@drawable/roundbutton"
+        android:text="Kisan Ki Awaz"
+        android:layout_below="@+id/pest"
+        android:layout_alignLeft="@+id/pest"
+        android:layout_alignStart="@+id/pest" />
+
+    <ImageButton
+        android:id="@+id/kissanHelpLine"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/soil1"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:drawable/sym_call_outgoing"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_below="@+id/record"
+        android:layout_alignLeft="@+id/record"
+        android:layout_alignStart="@+id/record"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:id="@+id/kissanHelpLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kissanHelpLine"
+        android:layout_alignStart="@+id/kissanHelpLine"
+        android:layout_below="@+id/kissanHelpLine"
+        android:layout_marginTop="14dp"
+        android:text="Kisan HelpLine"
+        android:textColor="#000" />
+
+</RelativeLayout>
